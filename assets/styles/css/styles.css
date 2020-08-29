@@ -26,7 +26,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem;
+  position: fixed;
+  padding: 1rem;
+  width: 100%;
 }
 
 .fa-github {
@@ -89,6 +91,36 @@ body {
 .header__navbar li a {
   color: #000;
   font-size: 1.5rem;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-family: "The Historia Demo", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  background: linear-gradient(to top, #ffe838, #fd57bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero h2 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+@font-face {
+  font-family: "The Historia Demo";
+  src: url("../../fonts/webfontkit-20200829-172028/thehistoriademo-webfont.woff2") format("woff2"), url("../../fonts/webfontkit-20200829-172028/thehistoriademo-webfont.woff") format("woff");
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=styles.css.map */
