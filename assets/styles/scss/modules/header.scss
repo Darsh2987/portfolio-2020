@@ -1,27 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-}
-
-li, a {
-  list-style: none;
-  text-decoration: none;
-}
-
-body {
-  width: 100%;
-  height: 100%;
-  background-image: url("../../images/sitebg2.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;
-}
-
-.header {
+.header{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,7 +21,6 @@ body {
   align-items: center;
   justify-items: center;
 }
-
 .hamburger {
   width: 100%;
   height: 3px;
@@ -53,7 +29,7 @@ body {
 }
 
 .hamburger::before, .hamburger::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 3px;
@@ -68,5 +44,3 @@ body {
 .hamburger::after {
   transform: translateY(10px);
 }
-
-/*# sourceMappingURL=styles.css.map */
