@@ -6,6 +6,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+@font-face {
+  font-family: "The Historia Demo";
+  src: url("../../fonts/webfontkit-20200829-172028/thehistoriademo-webfont.woff2") format("woff2"), url("../../fonts/webfontkit-20200829-172028/thehistoriademo-webfont.woff") format("woff");
+  font-weight: normal;
+}
 li, a {
   list-style: none;
   text-decoration: none;
@@ -122,12 +127,6 @@ body {
   font-weight: 300;
   margin-top: 1rem;
   letter-spacing: 0.1rem;
-}
-
-@font-face {
-  font-family: "The Historia Demo";
-  src: url("../../fonts/webfontkit-20200829-172028/thehistoriademo-webfont.woff2") format("woff2"), url("../../fonts/webfontkit-20200829-172028/thehistoriademo-webfont.woff") format("woff");
-  font-weight: normal;
 }
 
 /*# sourceMappingURL=styles.css.map */
