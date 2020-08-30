@@ -93,6 +93,13 @@ body {
   font-size: 1.5rem;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero {
   height: 100vh;
   display: flex;
