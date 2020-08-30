@@ -196,4 +196,12 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */
