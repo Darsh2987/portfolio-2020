@@ -57,5 +57,9 @@
   justify-content: space-between;
 }
 
+.mywork__grid-item-links a:hover {
+  @include font-gradient()
+}
+
 
 
