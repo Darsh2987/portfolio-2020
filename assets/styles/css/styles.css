@@ -186,6 +186,10 @@ body {
   justify-content: space-between;
 }
 
+.mywork__grid-item-links a {
+  color: #0496FF;
+}
+
 .mywork__grid-item-links a:hover {
   background: linear-gradient(to top, #ffe838, #fd57bf);
   -webkit-background-clip: text;

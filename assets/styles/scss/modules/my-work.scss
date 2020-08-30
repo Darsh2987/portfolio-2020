@@ -57,9 +57,12 @@
   justify-content: space-between;
 }
 
-.mywork__grid-item-links a:hover {
-  @include font-gradient()
+.mywork__grid-item-links a {
+  color: #0496FF;
 }
 
+.mywork__grid-item-links a:hover {
+  @include font-gradient();
+}
 
 
