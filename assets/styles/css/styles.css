@@ -123,10 +123,15 @@ body {
 }
 
 .hero h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
-  margin-top: 1rem;
-  letter-spacing: 0.1rem;
+}
+
+.mywork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=styles.css.map */
