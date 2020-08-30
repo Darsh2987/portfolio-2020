@@ -5,6 +5,7 @@
   position: fixed;
   padding: 1rem;
   width: 100%;
+  z-index: 2;
 }
 
 .fa-github {
@@ -14,6 +15,7 @@
 .header__mobile-hamburger-icon {
   position: relative;
   width: 30px;
+  height: 20px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -47,16 +49,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #fff;
+  background-color: rgba(25, 25, 45, 0.98);
   position: fixed;
-  top: 0;
+  top: -100vh;
   right: 0;
-  left: 1100px;
-  bottom: 0;
+  left: 0;
   width: 100%;
+  height: 100vh;
   align-items: center;
   text-transform: uppercase;
-  opacity: 0;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  transition: all 650ms cubic-bezier(1,0,0,1);
+}
+
+.header__navbar-mobile-show {
+  top: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .header__navbar li {
@@ -64,6 +74,11 @@
 }
 
 .header__navbar li a {
-  color: #000;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-family:"The Historia Demo", sans-serif;
+  letter-spacing: 5px;
+}
+
+.header__navbar li a:hover, .header__navbar li a:focus {
+  @include font-gradient();
 }
