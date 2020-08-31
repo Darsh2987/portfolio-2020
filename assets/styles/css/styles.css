@@ -137,6 +137,7 @@ body {
   font-family: "The Historia Demo", sans-serif;
   letter-spacing: 5px;
   padding: 1rem;
+  font-weight: bold;
 }
 
 .header__navbar li a:hover, .header__navbar li a:focus {
