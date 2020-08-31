@@ -43,12 +43,13 @@ body {
 
 .header__mobile-hamburger-icon {
   position: relative;
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-items: center;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .hamburger {
@@ -75,6 +76,22 @@ body {
   transform: translateY(10px);
 }
 
+.hamburger-cross {
+  width: 0;
+}
+
+.hamburger-cross::before {
+  transform: rotate(-45deg);
+}
+
+.hamburger-cross::after {
+  transform: rotate(45deg);
+}
+
+.hamburger, .hamburger::before, .hamburger::after, .hamburger-cross::before, .hamburger-cross::after {
+  transition: all 650ms cubic-bezier(1, 0, 0, 1);
+}
+
 .header__navbar {
   display: flex;
   flex-direction: column;
@@ -97,6 +114,13 @@ body {
   top: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.header__navbar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__navbar li {
