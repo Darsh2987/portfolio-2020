@@ -28,3 +28,10 @@ body {
   background-size: cover;
   background-color: black;
 }
+
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-image: url("../../images/sitebg.jpg");
+  }
+}
