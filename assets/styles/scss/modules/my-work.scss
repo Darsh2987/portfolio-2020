@@ -73,6 +73,7 @@
 
 @media screen and (min-width: 800px) {
 
+
   .mywork h1 {
     font-size: 2.5rem;
   }
@@ -88,23 +89,19 @@
   .mywork__grid-item {
     display: grid;
     grid-column-gap: 2rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 55% 40%;
     grid-template-areas: 
     "image info";
     align-items: center;
   }
 
   .mywork__grid-item:nth-child(even) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 55%;
     grid-template-areas: 
     "info image";
   }
 
   #blu-saphir {
     width: 70%;
-  }
-
-  .mywork__grid-item-info h2 {
-    margin: 0;
   }
 }
