@@ -1,5 +1,4 @@
-window.addEventListener("load", function() {
-
+window.addEventListener("load", function () {
   function hamburger() {
     document.querySelector("#hamburger").addEventListener("click", menu);
 
@@ -15,22 +14,21 @@ window.addEventListener("load", function() {
         hamburger.classList.add("hamburger-cross");
       }
     }
-  };
+  }
 
   function revealOnScroll() {
-    let itemsToReveal = document.querySelectorAll(".mywork__grid-item")
+    let itemsToReveal = document.querySelectorAll(".projects__grid-item");
 
     window.addEventListener("scroll", () => {
-      itemsToReveal.forEach(el => {
-        let scrollPercent = (el.getBoundingClientRect().y / window.innerHeight) * 100
+      itemsToReveal.forEach((el) => {
+        let scrollPercent = (el.getBoundingClientRect().y / window.innerHeight) * 100;
         if (scrollPercent < 75) {
-          el.classList.add("reveal-item-is-visible")
+          el.classList.add("reveal-item-is-visible");
         }
-      })
-    })
-  };
+      });
+    });
+  }
 
   hamburger();
-  revealOnScroll()
-
-})
+  revealOnScroll();
+});

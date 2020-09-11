@@ -215,11 +215,11 @@ body {
     font-size: 14rem;
   }
 }
-.mywork {
+.projects {
   margin-bottom: 4rem;
 }
 
-.mywork h1 {
+.projects h1 {
   position: relative;
   text-align: center;
   margin-bottom: 6rem;
@@ -227,7 +227,8 @@ body {
   text-transform: uppercase;
 }
 
-.mywork h1::before, .mywork h1::after {
+.projects h1::before,
+.projects h1::after {
   content: "";
   position: absolute;
   bottom: -0.5rem;
@@ -236,27 +237,27 @@ body {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-.mywork h1::before {
+.projects h1::before {
   width: 70px;
   height: 3px;
 }
 
-.mywork h1::after {
+.projects h1::after {
   width: 10px;
   height: 10px;
   border-radius: 100%;
   bottom: -0.7rem;
 }
 
-.mywork__grid-item {
+.projects__grid-item {
   margin-bottom: 3rem;
 }
 
-.mywork__grid-item-image {
+.projects__grid-item-image {
   text-align: center;
 }
 
-.mywork__grid-item-image img {
+.projects__grid-item-image img {
   width: 100%;
 }
 
@@ -264,45 +265,45 @@ body {
   max-width: 250px;
 }
 
-.mywork__grid-item-info h2 {
+.projects__grid-item-info h2 {
   font-weight: 300;
   margin: 1rem 0;
 }
 
-.mywork__grid-item-info p {
+.projects__grid-item-info p {
   margin-bottom: 1rem;
   line-height: 22px;
 }
 
-.mywork__grid-item-links {
+.projects__grid-item-links {
   display: flex;
   justify-content: space-between;
 }
 
-.mywork__grid-item-links a {
-  color: #0496FF;
+.projects__grid-item-links a {
+  color: #0496ff;
 }
 
-.mywork__grid-item-links a:hover {
+.projects__grid-item-links a:hover {
   background: linear-gradient(to top, #ffe838, #fd57bf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 @media screen and (min-width: 800px) {
-  .mywork h1 {
+  .projects h1 {
     font-size: 2.5rem;
   }
 
-  .mywork__grid-item-image {
+  .projects__grid-item-image {
     grid-area: image;
   }
 
-  .mywork__grid-item-info {
+  .projects__grid-item-info {
     grid-area: info;
   }
 
-  .mywork__grid-item {
+  .projects__grid-item {
     display: grid;
     grid-column-gap: 2rem;
     grid-template-columns: 55% 40%;
@@ -310,7 +311,7 @@ body {
     align-items: center;
   }
 
-  .mywork__grid-item:nth-child(even) {
+  .projects__grid-item:nth-child(even) {
     grid-template-columns: 40% 55%;
     grid-template-areas: "info image";
   }
