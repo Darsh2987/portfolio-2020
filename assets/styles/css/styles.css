@@ -271,6 +271,7 @@ body {
 
 .projects__grid-item-wrapper {
   overflow: hidden;
+  padding-top: 3rem;
 }
 
 .projects__grid-item {
