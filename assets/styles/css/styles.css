@@ -187,7 +187,7 @@ body {
 
 .hero h1 {
   font-family: "The Historia Demo", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   letter-spacing: 0.1rem;
   padding: 1rem;
   background: linear-gradient(to top, #ffe838, #fd57bf);
@@ -196,7 +196,7 @@ body {
 }
 
 .hero h2 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 300;
 }
 

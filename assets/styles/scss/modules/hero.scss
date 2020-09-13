@@ -8,14 +8,14 @@
 
 .hero h1 {
   font-family: "The Historia Demo", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   letter-spacing: 0.1rem;
   padding: 1rem;
   @include font-gradient();
 }
 
 .hero h2 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 300;
 }
 
