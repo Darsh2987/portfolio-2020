@@ -200,7 +200,7 @@ body {
   font-weight: 300;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 376px) {
   .hero h1 {
     font-size: 5rem;
   }
