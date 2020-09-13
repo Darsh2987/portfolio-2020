@@ -32,8 +32,13 @@
   bottom: -0.7rem;
 }
 
+.projects__gris-item-wrapper {
+  overflow: hidden;
+}
+
 .projects__grid-item {
-  margin-bottom: 3rem;
+  width: 90%;
+  margin: 0 auto 3rem auto;
 }
 
 .projects__grid-item-image {
