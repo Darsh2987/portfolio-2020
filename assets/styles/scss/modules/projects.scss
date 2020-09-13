@@ -82,7 +82,7 @@
   @include font-gradient();
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .projects h1 {
     font-size: 2.5rem;
   }
@@ -98,17 +98,23 @@
   .projects__grid-item {
     display: grid;
     grid-column-gap: 2rem;
-    grid-template-columns: 55% 40%;
+    grid-template-columns: 50% 45%;
     grid-template-areas: "image info";
     align-items: center;
   }
 
   .projects__grid-item:nth-child(even) {
-    grid-template-columns: 40% 55%;
+    grid-template-columns: 45% 50%;
     grid-template-areas: "info image";
   }
 
   #blu-saphir {
     width: 70%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .hangman {
+    height: 320px;
   }
 }
