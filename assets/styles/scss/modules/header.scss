@@ -1,4 +1,4 @@
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,8 +30,9 @@
   border-radius: 1px;
 }
 
-.hamburger::before, .hamburger::after {
-  content: '';
+.hamburger::before,
+.hamburger::after {
+  content: "";
   position: absolute;
   width: 100%;
   height: 3px;
@@ -59,8 +60,12 @@
   transform: rotate(45deg);
 }
 
-.hamburger, .hamburger::before, .hamburger::after, .hamburger-cross::before, .hamburger-cross::after {
-  transition: all 650ms cubic-bezier(1,0,0,1);
+.hamburger,
+.hamburger::before,
+.hamburger::after,
+.hamburger-cross::before,
+.hamburger-cross::after {
+  transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
 
 .header__navbar {
@@ -78,7 +83,7 @@
   text-transform: uppercase;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
-  transition: all 650ms cubic-bezier(1,0,0,1);
+  transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
 
 .header__navbar-mobile-show {
@@ -100,12 +105,13 @@
 
 .header__navbar li a {
   font-size: 2rem;
-  font-family:"The Historia Demo", sans-serif;
+  font-family: "The Historia Demo", sans-serif;
   letter-spacing: 5px;
   padding: 1rem;
   font-weight: bold;
 }
 
-.header__navbar li a:hover, .header__navbar li a:focus {
+.header__navbar li a:hover,
+.header__navbar li a:focus {
   @include font-gradient();
 }

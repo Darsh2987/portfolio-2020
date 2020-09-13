@@ -11,7 +11,8 @@
   src: url("../../fonts/webfontkit-20200829-172028/thehistoriademo-webfont.woff2") format("woff2"), url("../../fonts/webfontkit-20200829-172028/thehistoriademo-webfont.woff") format("woff");
   font-weight: normal;
 }
-li, a {
+li,
+a {
   list-style: none;
   text-decoration: none;
 }
@@ -75,7 +76,8 @@ body {
   border-radius: 1px;
 }
 
-.hamburger::before, .hamburger::after {
+.hamburger::before,
+.hamburger::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -104,7 +106,11 @@ body {
   transform: rotate(45deg);
 }
 
-.hamburger, .hamburger::before, .hamburger::after, .hamburger-cross::before, .hamburger-cross::after {
+.hamburger,
+.hamburger::before,
+.hamburger::after,
+.hamburger-cross::before,
+.hamburger-cross::after {
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
 
@@ -151,7 +157,8 @@ body {
   font-weight: bold;
 }
 
-.header__navbar li a:hover, .header__navbar li a:focus {
+.header__navbar li a:hover,
+.header__navbar li a:focus {
   background: linear-gradient(to top, #ffe838, #fd57bf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -178,11 +185,13 @@ body {
   }
 }
 .hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
 }
 
 .hero h1 {
