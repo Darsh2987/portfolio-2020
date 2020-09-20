@@ -1,3 +1,5 @@
+import "../styles/css/styles.css";
+
 window.addEventListener("load", () => {
   const nav = document.querySelector("#navbar");
   const hamburgerBtn = document.querySelector(".hamburger");
