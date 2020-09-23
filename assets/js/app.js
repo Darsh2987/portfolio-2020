@@ -47,6 +47,18 @@ window.addEventListener("load", () => {
     });
   }
 
+  document.querySelector("#home-link").addEventListener("click", () => {
+    document.querySelector(".hero-wrapper").scrollIntoView({ behavior: "smooth" });
+  });
+
+  document.querySelector("#work-link").addEventListener("click", () => {
+    document.querySelector("#mywork").scrollIntoView({ behavior: "smooth" });
+  });
+
+  document.querySelector("#projects-link").addEventListener("click", () => {
+    document.querySelector("#myprojects").scrollIntoView({ behavior: "smooth" });
+  });
+
   hamburger();
   navLinks();
   revealOnScroll();
