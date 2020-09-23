@@ -50,6 +50,8 @@ window.addEventListener("load", () => {
         let scrollPercent = (el.getBoundingClientRect().y / window.innerHeight) * 100;
         if (scrollPercent < 75) {
           el.classList.add("reveal-item-is-visible");
+        } else {
+          el.classList.remove("reveal-item-is-visible");
         }
       });
     });
