@@ -41,6 +41,13 @@ window.addEventListener("load", () => {
     });
   }
 
+  // function to reveal hero section - fade in effect
+  function revealHero() {
+    const hero = document.querySelector(".hero");
+    hero.style.opacity = "1";
+    hero.style.transition = "opacity 6s";
+  }
+
   // function to reveal mywork and projects items on scroll
   function revealOnScroll() {
     let itemsToReveal = document.querySelectorAll(".projects__grid-item");
@@ -59,5 +66,6 @@ window.addEventListener("load", () => {
 
   hamburger();
   navLinks();
+  revealHero();
   revealOnScroll();
 });
