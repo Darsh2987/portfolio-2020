@@ -12,6 +12,13 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "pokemon";
+  src: url("../../fonts/pokemon_solid-webfont.woff") format("woff2"), url("../../fonts/pokemon_solid-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 li,
 a {
   list-style: none;

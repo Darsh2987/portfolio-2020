@@ -92,7 +92,28 @@
 }
 
 #pokedex {
-  background-image: $hangman-background;
+  background-color: #ef5350;
+}
+
+#pokedex div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 50%;
+  background-image: url("../../../assets/images/pokeball.png");
+  background-size: cover;
+}
+
+#pokedex h2 {
+  font-family: "pokemon", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 4px;
+  color: #faca48;
+  -webkit-text-stroke: 1px #3b62a3;
+  text-transform: capitalize;
 }
 
 @media screen and (min-width: 900px) {
@@ -139,6 +160,11 @@
   .projects__grid-item-image-header {
     height: 240px;
   }
+
+  .projects__grid-item-info p {
+    font-size: 1rem;
+    line-height: 20px;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -153,7 +179,7 @@
   }
 
   .projects__grid-item-info p {
-    font-size: 1.1rem;
-    line-height: 20px;
+    font-size: 1.2rem;
+    line-height: 25px;
   }
 }
