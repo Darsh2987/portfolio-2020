@@ -61,6 +61,15 @@ window.addEventListener("load", () => {
           el.classList.remove("reveal-item-is-visible");
         }
       });
+
+      // make header solid on scroll
+      const header = document.querySelector(".header");
+      if (window.scrollY > 0) {
+        header.style.backgroundColor = "rgba(25,25,45, 0.99)";
+        header.style.transition = "background-color 0.5s";
+      } else {
+        header.style.backgroundColor = "";
+      }
     });
   }
 
