@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserJSPlugin = require("terser-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/assets/js/app.js",
@@ -20,6 +21,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "index",
       template: "src/index.html",
+    }),
+    new CopyPlugin({
+      patterns: [{ from: "src/assets/images", to: "assets/images" }],
     }),
   ],
   module: {
@@ -43,8 +47,8 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "./images",
-              publicPath: "images",
+              outputPath: "./assets/images",
+              publicPath: "assets/images",
             },
           },
         ],
@@ -56,8 +60,8 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "./fonts",
-              publicPath: "fonts",
+              outputPath: "./assets/fonts",
+              publicPath: "assets/fonts",
             },
           },
         ],
