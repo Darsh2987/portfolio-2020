@@ -1,4 +1,4 @@
-import "../styles/css/styles.css";
+import "../styles/scss/imports.scss";
 
 window.addEventListener("load", () => {
   // Global Variables

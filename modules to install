@@ -16,3 +16,5 @@ npm install url-loader --save-dev
 npm i --save-dev html-webpack-plugin
 
 npm install copy-webpack-plugin --save-dev
+
+npm install sass-loader node-sass --save-dev
