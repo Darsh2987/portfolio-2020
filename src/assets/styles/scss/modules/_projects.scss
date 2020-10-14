@@ -116,6 +116,17 @@
   text-transform: capitalize;
 }
 
+#travel-site {
+  background-image: url("../../../assets/images/travel-site-medium.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h2 {
+    color: #d59541;
+    font-size: 3rem;
+  }
+}
+
 @media screen and (min-width: 900px) {
   .projects h1 {
     font-size: 2.5rem;
