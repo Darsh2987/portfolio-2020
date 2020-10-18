@@ -39,6 +39,11 @@ window.addEventListener("load", () => {
       resetNav();
       document.querySelector("#myprojects").scrollIntoView({ behavior: "smooth" });
     });
+
+    document.querySelector("#about-me-link").addEventListener("click", () => {
+      resetNav();
+      document.querySelector("#about-me").scrollIntoView({ behavior: "smooth" });
+    });
   }
 
   // function to reveal hero section - fade in effect
