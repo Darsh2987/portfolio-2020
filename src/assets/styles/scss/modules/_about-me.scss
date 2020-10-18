@@ -10,3 +10,24 @@
     margin-bottom: 1rem;
   }
 }
+
+.about-me--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me--content-img img {
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .about-me--content {
+    flex-direction: row;
+  }
+
+  .about-me--content-img img {
+    margin: 0 2rem 0 0;
+  }
+}
