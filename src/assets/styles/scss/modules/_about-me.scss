@@ -17,6 +17,71 @@
   align-items: center;
 }
 
+.about-me--icons {
+  width: 100%;
+  font-size: 3rem;
+  grid-area: aboutmeicons;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    padding: 1rem;
+  }
+
+  .fa-html5 {
+    color: #e75b39;
+  }
+
+  .fa-css3-alt {
+    color: #2c79b3;
+  }
+
+  .fa-sass {
+    color: #c06993;
+  }
+
+  .fa-js-square {
+    color: #d9a041;
+  }
+
+  .fa-wordpress {
+    color: #247195;
+  }
+
+  .fa-npm {
+    color: #c42a17;
+  }
+
+  .fa-yarn {
+    color: #3d89b1;
+  }
+
+  .fa-git-alt {
+    color: #de5a3c;
+  }
+
+  .fa-github {
+    color: #fff;
+    font-size: 3rem;
+  }
+
+  img {
+    width: 60px;
+    position: relative;
+  }
+}
+
+.about-me--content-img {
+  grid-area: aboutmeimg;
+}
+
+about-me--content-info {
+  grid-area: aboutmeinfo;
+}
+
 .about-me--content-img img {
   border-radius: 50%;
   margin-bottom: 2rem;
@@ -24,7 +89,22 @@
 
 @media screen and (min-width: 1000px) {
   .about-me--content {
-    flex-direction: row;
+    display: grid;
+    grid-template-areas: "aboutmeicons aboutmeicons" "aboutmeimg aboutmeinfo";
+    align-items: center;
+  }
+
+  .about-me--icons {
+    width: unset;
+    flex-wrap: nowrap;
+
+    i {
+      font-size: 4rem;
+    }
+
+    img {
+      width: 8%;
+    }
   }
 
   .about-me--content-img img {
