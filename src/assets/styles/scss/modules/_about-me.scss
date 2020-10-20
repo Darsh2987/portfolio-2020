@@ -29,6 +29,11 @@
 
   i {
     padding: 1rem;
+    transition: transform 0.2s ease;
+  }
+
+  i:hover {
+    transform: scale(1.2);
   }
 
   .fa-html5 {
@@ -71,6 +76,11 @@
   img {
     width: 60px;
     position: relative;
+    transition: transform 0.2s ease;
+  }
+
+  img:hover {
+    transform: scale(1.2);
   }
 }
 
