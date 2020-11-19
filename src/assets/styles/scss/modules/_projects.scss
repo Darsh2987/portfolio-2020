@@ -131,6 +131,17 @@
   }
 }
 
+#hogwarts-university {
+  background-image: url("../../../assets/images/hogwarts-banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 3rem;
+  }
+}
+
 @media screen and (min-width: 900px) {
   .projects__grid-item-image-header {
     height: 210px;
