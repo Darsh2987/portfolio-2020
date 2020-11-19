@@ -78,8 +78,16 @@ window.addEventListener("load", () => {
     });
   }
 
+  // Function to update footer date
+  function footerDate() {
+    const date = new Date();
+    const year = date.getFullYear();
+    document.querySelector("#footer-date").innerHTML = year;
+  }
+
   hamburger();
   navLinks();
   revealHero();
   revealOnScroll();
+  footerDate();
 });
