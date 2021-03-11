@@ -91,6 +91,19 @@
   max-width: 350px;
 }
 
+#flixnet-database {
+  background-image: url("../../../assets/images/flixnet-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  h2 {
+    background-color: #350050;
+    padding: 0.5rem 1rem;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
 #math-game {
   background-image: linear-gradient(390deg, rgb(109, 192, 190), rgb(11, 73, 25));
   h2 {
